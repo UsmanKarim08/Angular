@@ -1,3 +1,4 @@
+import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 
 
@@ -8,4 +9,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 name = 'Osman';
+showSecret = false;
+log = [];
+onToggleDetails(){
+  this.showSecret = !this.showSecret;
+  this.log.push(new Date());
+  
+
+}
 }
